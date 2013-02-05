@@ -187,6 +187,6 @@ var api = {
 }
 
 //use on webbrowser
-setTimeout(function () {
-	app.deviceready();
-}, 500);
+//setTimeout(function () {
+//	app.deviceready();
+//}, 500);
