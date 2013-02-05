@@ -43,7 +43,7 @@ var app = {
 
 var page = {
 	stack: [],
-	current: 'page-loading',
+	current: 'page-city-list',
 	currentParam: 0,
 	init: function () {
 		var prevButtons = document.querySelectorAll('.prev_button');
@@ -187,6 +187,6 @@ var api = {
 }
 
 //use on webbrowser
-//setTimeout(function () {
-//	app.deviceready();
-//}, 500);
+setTimeout(function () {
+	app.deviceready();
+}, 500);
