@@ -71,7 +71,8 @@ hr{border:0px;border-bottom: dotted 2px #353434; margin-top:20px;}
 	position:relative;
 	overflow:hidden;
 }		
-.filter-area .search_txt_area{
+.filter-area .search_txt_area,
+.filter-area .search_txt_service{
 	width:90%;
 	height:38px;
 	font-size:24px;

@@ -27,17 +27,6 @@ var app = {
         //load cities from the API
 		page.init();
 		page.show('page-city-list');
-    },
-    report: function(id) {
-        // Report the event in the console
-        console.log("Report: " + id);
-
-        // Toggle the state from "pending" to "complete" for the reported ID.
-        // Accomplished by adding .hide to the pending element and removing
-        // .hide from the complete element.
-        document.querySelector('#' + id + ' .pending').className += ' hide';
-        var completeElem = document.querySelector('#' + id + ' .complete');
-        completeElem.className = completeElem.className.split('hide').join('');
     }
 };
 
@@ -46,19 +35,62 @@ var page = {
 	current: 'page-city-list',
 	currentParam: 0,
 	init: function () {
+		//back buttons
 		var prevButtons = document.querySelectorAll('.prev_button');
-//		var nextButtons = document.querySelectorAll('.next_button');
-		
+
+		function back() {
+			if (page.stack.length > 0) {
+				var obj = page.stack.pop();
+				page.show(obj.page, obj.param, true);
+			}
+			return false;
+		}
+
+		try	{
+			document.addEventListener("backbutton", back, false);
+		} catch (e)	{
+			
+		}
 
 		for(var i = 0; i < prevButtons.length; i++) {
-			prevButtons[i].addEventListener('click', function () {
-				if (page.stack.length > 0) {
-					var obj = page.stack.pop();
-					page.show(obj.page, obj.param, true);
-				}
-				return false;
-			});
+			prevButtons[i].addEventListener('click', back, false);
 		}
+		
+		//city filter
+		var cityText = document.querySelector('.search_txt_area');
+		var cityButton = document.querySelector('.search_btn_area');
+		
+		cityButton.addEventListener("click", function () {
+			var list = document.querySelectorAll('ul.city-list .map-area');
+			for(var i = 0; i < list.length; i++) {
+				var title = list[i].getAttribute('data-title');
+				var re = new RegExp(cityText.value, "ig");
+				if(cityText.value != '' && title.match(re) === null){
+					list[i].parentNode.style.display = 'none';
+				} else {
+					list[i].parentNode.style.display = 'block';
+				}
+			}
+			
+		}, false);
+		
+		//service filter
+		var serviceText = document.querySelector('.search_txt_service');
+		var serviceButton = document.querySelector('.search_btn_service');
+		
+		serviceButton.addEventListener("click", function () {
+			var list = document.querySelectorAll('ul.service-list .map-area');
+			for(var i = 0; i < list.length; i++) {
+				var title = list[i].getAttribute('data-title');
+				var re = new RegExp(serviceText.value, "ig");
+				if(serviceText.value != '' && title.match(re) === null){
+					list[i].parentNode.style.display = 'none';
+				} else {
+					list[i].parentNode.style.display = 'block';
+				}
+			}
+			
+		}, false);
 	},
 	show: function (target, param, ignore) {
 		param = param || 0;
@@ -187,6 +219,6 @@ var api = {
 }
 
 //use on webbrowser
-setTimeout(function () {
-	app.deviceready();
-}, 500);
+//setTimeout(function () {
+//	app.deviceready();
+//}, 500);
