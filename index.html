@@ -22,17 +22,150 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>WowWe</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is Ready</p>
-            </div>
-        </div>
+		<div id="page-loading" class="page">
+			<div class="bg-effect">
+				<div class="main_logo">
+				</div>
+				<p class="app_version">WowWe Mobile 1.0</p>
+				<div class="footer_home-screen">
+					<p class="app_version">© 2011  WowWe - by <a target="new" href="http://rizedesign.com.au/">Rize Design</a></p>
+				</div> 
+			</div>
+		</div>
+		<div id="page-city-list" class="page">
+			<div class="main-layout">	
+				<div class="header-content">
+					<div class="app-icon">           		 
+						<img src="img/WowWe-icon.png" />
+					</div>
+					<div class="filter-area">
+						<input class="search_txt_area" type="text" placeholder="Type to filter Service in Canberra" />
+					</div>
+					<div class="search-btn">
+						<input class="button" type="button" />             
+					</div>
+				</div>
+				<hr />
+				<div class="content-area">
+					<div class="loading"></div>
+					<ul></ul>
+				</div>
+			</div>
+			<div class="footer"> 
+				<div class="app-logo">
+					<img src="img/Wow-we_logo.png" />
+				</div>  
+				<div class="copyright">
+					<p>
+						www.wowwe.com.au <br />
+						© 2011  WowWe  by <br />
+						<a target="new" href="http://rizedesign.com.au/"> Rize Design</a>
+					</p>
+				</div> 	
+				<div class="prev_next_buttons">
+					<!-- a class="prev_button" href="#"></a -->
+					<!-- a class="next_button" href="#"></a -->
+				</div>
+			</div>
+		</div>
+		<div id="page-service-list" class="page">
+			<div class="main-layout">	
+				<div class="header-content">
+					<div class="app-icon">           		 
+						<img src="img/WowWe-icon.png" />
+					</div>
+					<div class="filter-area">
+						<input class="search_txt_area" type="text" placeholder="Type to filter Service in Canberra" />
+					</div>
+					<div class="search-btn">
+						<input class="button" type="button" />               
+					</div>
+				</div>
+				<hr />
+				<div class="content-area">
+					<div class="loading"></div>
+					<ul></ul>
+				</div>
+			</div>
+			<div class="footer"> 
+				<div class="app-logo">
+					<img src="img/Wow-we_logo.png" />
+				</div>  
+				<div class="copyright">
+					<p>
+						www.wowwe.com.au <br />
+						© 2011  WowWe  by <br />
+						<a target="new" href="http://rizedesign.com.au/"> Rize Design</a>
+					</p>
+				</div> 	
+				<div class="prev_next_buttons">
+					<a class="prev_button" href="#"></a>
+					<!-- a class="next_button" href="#"></a -->
+				</div>
+			</div>
+		</div>
+		<div id="page-service-details" class="page">
+			<div class="main-layout">	
+				<div class="header-content">
+					<div class="app-icon">           		 
+						<img src="img/WowWe-icon.png" />
+					</div>
+					<h1><b>Service</b> Details</h1>
+				</div>
+				<hr />
+				<div class="loading"></div>
+				<div class="content-area">
+					<div class="contact_details">        		
+						<img class="service-data-image" src="" /> 
+						<h1 class="services_heading"></h1>
+						<p>
+							<a href="mailto:jmacpherson_@hotmail.com">jmacpherson_@hotmail.com</a><br />
+						</p>
+						<br class="clear" />
+					</div>
+					<div class="service_details">
+						<h1 class="main_heading">
+							Bonus Initial Consultation Free!<br />
+							Save up to 150.00
+						</h1>
+						<p class="service_details_contents">
+							Gold Leaf Tree Services Pty Ltd provides you with professional and personalised tree services at a competitive cost.<br />
+							Gold Leaf Tree Services aim to have a lasting relationship with you and provide regular, accurate and honest advice that is easy to understand.<br />
+							We provide quality workmanship and keep on top of the latest developments in arboriculture to provide you with solutions so you receive optimum value from your trees. <br />
+							Our services include: 
+						</p>
+						<ul>
+							<li>Reports and consultation on tree health, planning, design and development</li>
+							<li>Pest and disease control</li> 
+							<li>Tree maintenance and management</li>
+							<li>Pruning</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer"> 
+				<div class="app-logo">
+					<img src="img/Wow-we_logo.png" />
+				</div>  
+				<div class="copyright">
+					<p>
+						www.wowwe.com.au <br />
+						© 2011  WowWe  by <br />
+						<a target="new" href="http://rizedesign.com.au/"> Rize Design</a>
+					</p>
+				</div> 	
+				<div class="prev_next_buttons">
+					<a class="prev_button" href="#"></a>
+					<!-- a class="next_button" href="#"></a -->
+				</div>
+			</div>
+		</div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

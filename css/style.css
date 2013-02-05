@@ -1,0 +1,319 @@
+body{ /* start pg */
+	background:url(../img/bg-effect.png);	
+}
+
+.main-layout{
+	width:auto;
+	height:auto;
+	background:#0b0a0a;
+	margin:auto;
+	padding:30px 12px 0 12px;	
+}
+
+.bg-effect{ /* start pg */
+	width:100%;
+	height:auto;
+	background:url(../img/background_img.png) top no-repeat;
+}
+
+.main_logo{ /* start pg */
+	width:220px;
+	height:390px;
+	background:url(../img/Wow-we_main_logo.png) no-repeat;
+	margin:auto;
+}
+
+.app_version{	
+	margin-top:10px;
+	text-align:center;
+	color:#393939;
+}
+
+
+hr{border:0px;border-bottom: dotted 2px #353434; margin-top:20px;}
+
+/***** Header *****/
+
+.main-layout .header-content{
+	width:100%;
+	height:46px;		
+	margin-right:25px;
+}		
+.header-content .app-icon {
+	width:auto;
+	float:left;
+	margin-right:20px;
+}				
+.header-content h1{  /*Service details pg */
+	color:#f16e27;
+	margin:0px;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	font-size:36px;
+}		
+.header-content h1 b{ /*Service details pg */
+	font-size:36px;
+}						
+.filter-area{
+	width:83%;
+	height:40px;
+	border:solid 2px #f26b26;
+	border-radius:5px;
+	float:left;
+	margin-right:20px;
+	background-color:#242424;
+	position:relative;
+	overflow:hidden;
+}		
+.filter-area .search_txt_area{
+	width:90%;
+	height:38px;
+	font-size:24px;
+	color:#aeaeae;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#242424;
+	padding-left:10px;
+	padding-right:10px;
+	border:none;
+}			
+.search-btn .button {
+	width:4%;
+	height:45px;
+	background:url(../img/WowWe-UI_06.png) center ;
+	float:left;
+	border: solid 2px #dedede;
+	border-radius:5px;
+	padding:10px;
+	margin:0px;
+	cursor:pointer;
+	min-width:50px;
+}
+
+/***** Main content *****/			
+
+
+.main-layout .content-area{
+	width:100%;	
+	height:auto;	  	
+	padding-top:5px;
+	padding-bottom:43px;
+	background:url(../img/WowWe-bg_logo.png) #171717 no-repeat bottom;
+}	
+.main-layout .content-area .contact_details{ /*Service details pg */
+	width:auto;
+/*	height:145px;*/
+	margin:10px 10px 40px 10px;
+	text-align: center;
+}	
+.main-layout .content-area .contact_details img{ /*Service details pg */
+	border: solid 3px #675a5a;			
+	float:left;
+	margin-right:10px;
+	width: 254px;
+}		
+p{ /*Service details pg */			
+	color:#c0c0c0;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:300;
+}		
+.main-layout .content-area .contact_details a{ /*Service details pg */
+	color:#1968e0;
+}		
+.bottom-space{
+	margin-bottom:20px;				
+}
+
+h1{ /*Service details pg */			
+	margin:0px;
+	color:#c0c0c0;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:300;
+	font-size:36px;
+}		
+.services_heading{
+	font-size:18px;
+}
+
+.main-layout .content-area .service_details{ /*Service details pg */
+	width:auto;
+	height:auto;
+	margin:0 20px 0 20px;		
+}
+.main_heading{ /*Service details pg */
+	color:#f16f28;
+	font-size:24px;
+	text-align:center;
+	margin-bottom:20px;
+}		
+.content-area ul{
+	width:auto;
+	height:auto;
+	padding:25px 30px 0 20px;
+	margin:0px;
+}	
+.content-area ul li{		
+	height:40px;
+	list-style:none;
+	margin-bottom:12px;
+	background:url(../img/map_marker-icon.png) no-repeat;
+	padding-left:45px;
+	line-height:1.5;
+}		
+.service_details_contents, .service_details ul li{ /*Service details pg */
+	font-size:20px;
+	line-height:2;
+	color:#c0c0c0;
+}		
+.service_details ul li{ /*Service details pg */
+	height:auto;			
+	background:url(../img/list_item_style.png) 0px 15px no-repeat;
+}		
+.map-area{
+	width:100%;
+	height:36px;
+	float:left;
+	background:#f3f3f3;
+	border:solid 2px #f3f3f3;
+	border-radius:5px;
+}	
+.map-area a{				
+	color:#2d2d2d;			
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:300;
+	text-decoration:none;
+	font-size:24px;
+	width:100%;
+	display:block;
+}		
+.map-area a strong{
+	font-size:24px;
+	padding:0 0px 0 20px;
+}
+
+/***** Footer *****/	
+
+.footer{
+	width:auto;
+	height:50px;
+	margin:auto;
+	background:#090909;
+	border-top:solid 4px #0e0e0e;
+	padding:10px 12px 5px 12px;
+}	
+.footer .app-logo{
+	width:auto;
+	height:40px;
+	float:right;
+}	
+.prev_next_buttons{
+	float:left;
+	width:auto;
+	height:50px;
+}	
+.prev_button{
+	width:45px;
+	height:45px;				
+	background:url(../img/button.png) 0 -4px no-repeat;
+	display:block;
+	float:left;
+}			
+.prev_button:hover,.prev_button.disable{
+	width:45px;
+	background:url(../img/button.png) 0 -49px no-repeat;
+}		
+.next_button{	
+	width:45px;
+	height:45px;		
+	background:url(../img/button.png) -44px -4px no-repeat;
+	display:block;
+	float:left;
+}
+.next_button:hover,.next_button.disable{
+	width:45px;
+	background:url(../img/button.png) -44px -49px no-repeat;
+}	
+.footer .copyright{
+	width:auto;
+	height:auto;
+	float:right;		
+}
+.footer .copyright p{
+	font-size:11px;
+	color:#333333;
+	margin:0px;
+	font-weight:700;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.footer .copyright a{
+	color:#ed470e;
+	text-decoration:none;
+}
+.footer_home-screen{
+	width:100%;
+	position:absolute;
+	bottom:20px;	
+}
+.footer_home-screen a{
+	color:#ed470e;
+	text-decoration:none;
+}
+
+@media only screen and (max-width: 900px) {
+	.filter-area{
+		width:60%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.filter-area{
+		width:55%;
+	}
+}
+
+/** APP STYLING **/
+br.clear{
+	clear: both;
+}
+
+.loading{
+	width: 100%;
+	height: 300px;
+	background: transparent url('../img/ajax-loader.gif') no-repeat center center;
+	
+	-webkit-transition: height 0.4s;
+	   -moz-transition: height 0.4s;
+		 -o-transition: height 0.4s;
+			transition: height 0.4s;
+}
+
+.page{
+	display: none;
+}
+
+#page-loading.page{
+	display: block;
+}
+
+.content-area ul,
+#page-service-details .content-area{
+	opacity: 0;
+	
+	-webkit-transition: opacity 1s;
+	   -moz-transition: opacity 1s;
+		 -o-transition: opacity 1s;
+			transition: opacity 1s;
+}
+
+#page-service-details .content-area .service_details{
+	font-size: 20px;
+	line-height: 2;
+	color: #c0c0c0;
+}
+
+#page-service-details .content-area .service_details a,
+#page-service-details .contact_details a{
+	color: #f16f28;
+}
