@@ -209,10 +209,13 @@ var page = {
 var api = {
 	path: 'http://wowwe.com.au/api/',
 	get: function (res, process) {
+		var script = document.createElement('script');
+		
 		window.jpRes = function (data) {
 			process(data);
+			script.parentNode.removeChild(script);
 		}
-		var script = document.createElement('script');
+		
 		script.src = api.path + res + 'callback=jpRes';
 		document.body.appendChild(script);
 	}
